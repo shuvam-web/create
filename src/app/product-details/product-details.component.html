@@ -1,0 +1,115 @@
+
+
+  <body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="details">
+		<div class="container">
+		  <a class="navbar-brand" href="#">Line <span>Road</span></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active first">
+				  <a class="nav-link" href="#">Men</a>
+				</li>
+				<li class="nav-item active first">
+				  <a class="nav-link" (click)="go()">Women</a>
+				</li>
+				<li class="nav-item active first">
+				  <a class="nav-link" href="#">Kids</a>
+				</li>
+			  </ul>
+		  </div>
+		  
+		  <form class="form-inline my-2 my-lg-0">
+			  <input class="form-control mr-sm-2" type="search" placeholder="Search for products, or brands or more" aria-label="Search">
+			  <i class="fa fa-search icon" aria-hidden="true"></i>
+	  
+			  <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+			</form>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
+			  <li class="nav-item second">
+			  <i class="fa fa-shopping-cart fa-lg"(click)="cart()"></i>
+				</li>
+			  <li class="nav-item second">
+			   <i class="fa fa-first-order fa-lg"(click)="order()"></i>
+				</li>
+			   <li class="nav-item second">
+				  <i class="fa fa-sign-out fa-lg"(click)="logout()"></i>
+				  </li>
+				  <li class="nav-item second">
+					<i class="fa fa-commenting-o fa-lg" (click)="feedback()"></i>
+	  
+					 </li>
+	 
+			  </ul>
+		   
+		  </div>
+		</div>
+		</nav>
+	<!-- Second part -->
+	
+		<div class="card">
+			<div class="container">
+			<div class="container-fliud">
+				<div class="wrapper row">
+
+					<div class="preview col-md-6">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img src="{{userdata.image}}"/></div>
+						  <div class="tab-pane" id="pic-2"><img src="{{userdata.image}}" /></div>
+						  <div class="tab-pane" id="pic-3"><img src="{{userdata.image}}" /></div>
+						  <div class="tab-pane" id="pic-4"><img src="{{userdata.image}}" /></div>
+						  <div class="tab-pane" id="pic-5"><img src="{{userdata.image}}" /></div>
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="{{userdata.image}}" /></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img src="{{userdata.image}}" /></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img src="{{userdata.image}}" /></a></li>
+						  <li><a data-target="#pic-4" data-toggle="tab"><img src="{{userdata.image}}" /></a></li>
+						  <li><a data-target="#pic-5" data-toggle="tab"><img src="{{userdata.image}}" /></a></li>
+						</ul>
+						
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">{{userdata.title}}</h3>
+						<div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<span class="review-no">41 reviews</span>
+						</div>
+						<p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
+						<h4 class="price">current price: <span>{{userdata.price}}</span></h4>
+						<p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+						<h5 class="sizes">sizes:
+							<span class="size" data-toggle="tooltip" title="small">s</span>
+							<span class="size" data-toggle="tooltip" title="medium">m</span>
+							<span class="size" data-toggle="tooltip" title="large">l</span>
+							<span class="size" data-toggle="tooltip" title="xtra large">xl</span>
+						</h5>
+						<h5 class="colors">colors:
+							<span class="color orange not-available" data-toggle="tooltip" title="Not In store"></span>
+							<span class="color green"></span>
+							<span class="color blue"></span>
+						</h5>
+						<div class="action">
+							<button class="add-to-cart btn btn-default" type="button">add to cart</button>
+							<button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	
+  </body>
+
+

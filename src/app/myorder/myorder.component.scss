@@ -1,0 +1,62 @@
+
+.navbar{
+    height:15vh;
+    
+}
+.navbar .tem{
+    color:#fde81d;
+}
+.col-md-4{
+    width:350px;
+    margin-left:10px;
+    position:relative;
+    left:20%;
+    margin-top:10px;
+    
+}
+.col-md-4 small{
+    color:red;
+    font-size:35px;
+    // font-family: 'Roboto Slab', serif;
+    font-family: 'Monoton', cursive;
+   letter-spacing:6px;
+    font-weight:bold;
+}
+.col-md-4 span{
+    color:green;
+}
+.ss{
+    position:relative;
+    top:20px;
+    left:30%;
+    font-size:16px;
+    word-spacing: 5px;
+}
+.rr img{
+    width:70px;
+    height:6vh;
+    position:relative;
+    left:350%;
+    top:-55px;
+}
+.contain {
+    position:relative;
+    left:39%;
+    top:150px;
+}
+.conntain h3{
+     font-size:16px;
+}
+.contain h6{
+    font-size:14px;
+}
+.contain button{
+    width:300px;
+    height:5vh;
+    background:none;
+    border:2px solid red;
+    color:red;
+}
+.contain button:hover{
+    background:green;
+}

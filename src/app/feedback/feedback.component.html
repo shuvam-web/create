@@ -1,0 +1,29 @@
+<body>
+  <div class="main">
+    <div class="main-left">
+<form [formGroup]="ReactiveForm" (submit)="go()">
+    <h2>Your Feedback</h2>
+    <input type="text" placeholder="Name" formControlName="name"><br>
+    <span *ngIf="ReactiveForm.get('name').hasError('required') && ReactiveForm.get('name').touched">
+      **Required** </span>
+    <input type="text" placeholder="Email" formControlName="email"><br>
+    <span *ngIf="ReactiveForm.get('email').hasError('required') && ReactiveForm.get('email').touched">
+      **Required** </span>
+    <input type="number" placeholder="Phone number" formControlName="phone"><br>
+    <span *ngIf="ReactiveForm.get('phone').hasError('required') && ReactiveForm.get('phone').touched">
+      **Required** </span>
+    <div formArrayName="comment">
+    <button type="button"(click)="addAlter()" class="btn">Comment Here</button><br>
+    <div *ngFor="let item of comment.controls; let i=index">
+      <textarea type="text" placeholder="Write Here..." [formControlName]="i"></textarea><br>
+      <button (click)="remove(i)" type="button" class="btn1">Remove</button>
+    </div>
+    </div>
+    <button type="submit" class="btm"[disabled]="!ReactiveForm.valid">Submit</button>
+  </form>
+  </div>
+  <div class="main-right">
+    <img src="../../assets/feedback1.jpg">
+  </div>
+  </div>
+</body>

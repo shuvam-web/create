@@ -1,0 +1,96 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="details">
+    <div class="container">
+      <a class="navbar-brand" href="#">Line <span>Road</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active first">
+              <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item active first">
+              <a class="nav-link" (click)="go()">Women</a>
+            </li>
+            <li class="nav-item active first">
+              <a class="nav-link" href="#">Kids</a>
+            </li>
+          </ul>
+      </div>
+      
+      <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search for products, or brands or more" aria-label="Search">
+          <i class="fa fa-search icon" aria-hidden="true"></i>
+  
+          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+          <li class="nav-item second">
+          <i class="fa fa-shopping-cart fa-lg"(click)="cart()"></i>
+            </li>
+          <li class="nav-item second">
+           <i class="fa fa-first-order fa-lg"(click)="order()"></i>
+            </li>
+           <li class="nav-item second">
+              <i class="fa fa-sign-out fa-lg"(click)="logout()"></i>
+              </li>
+              <li class="nav-item second">
+                <i class="fa fa-commenting-o fa-lg" (click)="feedback()"></i>
+  
+                 </li>
+          </ul>
+       
+      </div>
+    </div>
+    </nav>
+<!-- Second -->
+
+<div class="row">
+  
+  <div class="col-md-8">
+    <img src="../../assets/spin2.jpg">
+  </div>
+  <div class="col-md-4">
+    <div class="form-box">
+      <img src="../../assets/location.jpg">
+<i><p>Your Delivery Pincode</p></i><br><br>
+ <h6>Enter your pincode to check<br>
+   availability and faster delivery options</h6>
+   <input type="text" placeholder="Enter Pincode">
+   <button type="submit">Submit</button>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Products -->
+
+<div class="row ss bg-light">
+  <div *ngFor="let a of myArray">
+  
+  <div class="container">
+  <div class="col-md-3 pg">
+    <div class="card" style="width: 18rem;">
+      <div class="contain">
+      <img src="{{a.image}}" class="card-img-top" alt="...">
+      <div class="overlay"><button><a routerLink="../product-details/{{a.id}}">{{a.button}}</a></button></div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{a.title}}</h5>
+        <h6 class="card-text">{{a.text}}</h6>
+        <h6>{{a.price}}  <del>{{a.price1}}</del><span>{{a.price2}}</span></h6>
+        <a href="#" class="btn btn-primary">{{a.button1}}</a>
+      </div>
+    </div>
+  </div>
+  </div>
+ </div>
+ <!-- <router-outlet></router-outlet> -->
+  
+</div>
+
+  
+
+

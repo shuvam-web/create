@@ -1,0 +1,229 @@
+//Header
+.navbar{
+    margin:0.5px;
+    overflow:hidden;
+    // background:#fff;
+    z-index:100;
+    box-sizing:border-box;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+  }
+  .sticky + .navbar {
+    padding-top:30px;
+    
+  }
+.navbar-brand{
+    color:red;
+    font-size:22px;
+    // font-family: 'Roboto Slab', serif;
+    font-family: 'Monoton', cursive;
+   letter-spacing:2px;
+    font-weight:bold;
+}
+.navbar-brand span{
+    color:#fde81d;
+}
+
+
+//Search box
+.form-control{
+    width:600px;
+    position:relative;
+    left:6%;
+    top:8px;
+    border-radius:12px;
+    border:1px solid black;
+    
+    
+}
+::-webkit-input-placeholder{
+    padding-left:50px;
+    font-family: 'Syne', sans-serif;
+    font-size:15px;
+    letter-spacing:3px;
+}
+.icon{
+    position:relative;
+    top:-19px;
+    left:10%;
+}
+input:focus {
+    padding-left:50px;
+
+}
+//Navbar
+.navbar{
+    height:12vh;
+     background:rgba(254, 72, 72, 0.94);
+    // background:black;
+    // background:#fff;
+}
+// NavItem
+.first{
+  margin:7px;
+  padding:7px;
+  text-align:center;
+  font-weight:bold;
+  cursor:pointer;
+
+}
+// .first a{
+//     font-size:18px;
+// }
+// .first:hover{
+//     background:black;
+//     width:80px;
+//     transition: transform 0.5s;
+    
+//     border-radius:10px;
+// }
+// .first a:hover{
+//     color:#fff;
+// }
+//NavItem
+.second{
+    position:relative;
+    left:35%;
+    top:3px;
+    margin:5px;
+    padding:5px;
+}
+.second .fa{
+  margin:2px;
+  padding:7px;
+  cursor:pointer;
+  color:#fff;
+  background:black;
+  border-radius:50%;
+
+}
+
+//Middle
+.wrapper{
+  width:1600px;
+  height:18vh;
+  background:black;
+}
+.wrapper h1{
+    text-align:center;
+    color:#fff;
+    font-weight:bold;
+    // font-family:sans-serif;
+    position:relative;
+    top:50px;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+.wrapper .fa{
+    position:relative;
+    left:67%;
+    top:7px;
+    color:#fff;
+}
+//caroseal
+.carousel-item img{
+    width:60%;
+    height:60vh;
+    margin:1px;
+}
+
+//Side Navbar
+
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.5s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 28px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    word-spacing:4px;
+    font-weight:bold;
+}
+  
+  #mySidenav a:hover {
+    left: 0;/* On mouse-over, make the elements appear as they should */
+    width:250px;
+    height:10vh;
+    // writing-mode: vertical-rl;
+
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    top: 600px;
+    // background-color: #4CAF50;
+    background-color: red;
+  }
+  
+//bank discount
+.bank{
+    width:1600px;
+    height:30vh;
+    border-top:1px solid lightgray;
+    border-bottom:1px solid lightgray;
+    margin:1px;
+    display:flex;
+
+}
+.bank-left{
+    flex-basis:48%;
+}
+.bank-left img{
+    width:190px;
+    margin:20px;
+    position:relative;
+    left:30%;
+    height:20vh;
+    
+}
+.bank-center{
+    font-size:120px;
+    
+}
+
+.bank-right{
+    flex-basis:48%;
+
+}
+.bank-right {
+    position:relative;
+    top:80px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+
+}
+//Trust payment
+
+.col-md-3{
+    border:1px solid lightgray;
+    height:30vh;
+    margin-top:0;
+}
+.col-md-3 img{
+    width:200px;
+    height:15vh;
+    position:relative;
+    left:25%;
+    top:30px;
+}
+.col-md-3 p{
+    text-align:center;
+    font-size:20px;
+    position:relative;
+    left:5%;
+    top:35px;
+    font-weight:italic;
+    font-family:sans-serif;
+    word-spacing:2px;
+}
+
+
+

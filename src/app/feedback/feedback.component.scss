@@ -1,0 +1,142 @@
+// body{
+//     background:lightblue;
+//     width:1600px;
+//     height:100vh;
+
+// }
+.main{
+    display:flex;
+}
+.main-left{
+    flex-basis:50%;
+}
+.main-right{
+    flex-basis:50%;
+}
+.main-right img{
+    position:relative;
+    left:-5%;
+    width:800px;
+    height:110vh;
+    transition:transform 0.8s;
+}
+img:hover{
+    transform:translateY(-7px);
+}
+form{
+    width:600px;
+    // margin:8% auto;
+    background:lightgrey;
+    // border:5px solid red;
+    border-top:5px solid red;
+    border-bottom:5px solid red;
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:50px;
+    left:10%;
+    height:auto;
+    border-radius:25px;
+    background:transparent;
+    transition: transform 0.8s;
+}
+form:hover{
+    transform:translateY(-7px);
+}
+h2{
+    text-align:center;
+    margin-top:15px;
+    color:red;
+    word-spacing:5px;
+    letter-spacing:5px; 
+}
+form h2::after{
+   content:'';
+    display:block;
+    width:220px;
+    margin:2% auto;
+    background:red;
+    height:5px;
+
+
+}
+input{
+    width:80%;
+    padding:5px;
+    margin:16px;
+    position:relative;
+    left:8%;
+    // border-radius:8px;
+    height:40px;
+    // border:1px solid red;
+    border:none;
+    border-bottom:1px solid red;
+}
+span{
+    position:relative;
+    left:10%;
+    top:-5px;
+    color:red;
+}
+input.ng-valid.ng-touched{
+    border:1px solid green;
+}
+textarea{
+    width:80%;
+    height:20vh;
+    padding:5px;
+    margin:16px;
+    position:relative;
+    left:8%;
+    border-radius:8px;
+    border:1px solid red;
+}
+::-webkit-input-placeholder{
+    padding:5px;
+    word-spacing:4px;
+    font-size:18px;
+    color:red;
+}
+button{
+    position:relative;
+    left:10%;
+    width:70px;
+    margin-top:12px;
+    margin-bottom:12px;
+    width:150px;
+    word-spacing:5px;
+    border-radius:10px;
+    background:green;
+    color:#fff;
+
+}
+.btn{
+    position:relative;
+    left:10%;
+    width:150px;
+    margin:2px;
+    word-spacing:5px;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+
+}
+.btn1{
+     position:relative;
+     left:65%;
+     top:-15px;
+    background:red;
+    border:none;
+}
+.btm{
+    position:relative;
+    left:30%;
+    width:200px;
+    height:6vh;
+    font-size:22px;
+    border:1px solid red;
+    background:rgba(254, 72, 72, 0.94);
+    border:none;
+}
+
+
